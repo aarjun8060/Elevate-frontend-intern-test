@@ -1,7 +1,10 @@
 # Project Banner
-[banner](https://github.com/aarjun8060/Elevate-frontend-intern-test/blob/main/public/banner.png)
+![banner](https://github.com/aarjun8060/Elevate-frontend-intern-test/blob/main/public/banner.png)
+
 ## Tech Stack
-    Next.js | ShadCN UI | TailwindCSS | HTML | 
+    Next.js | ShadCN UI | TailwindCSS | HTML | CSS | JAVASCRIPT
+
+## Folder Structure
     
 ## Getting Started
 
