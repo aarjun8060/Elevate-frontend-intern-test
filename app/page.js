@@ -51,7 +51,7 @@ export default function Home() {
     filterData = search
       ? ApplicantData.filter((applicant) => regex.test(applicant.ApplicantName))
       : ApplicantData;
-
+      console.log("filterData",filterData)
       if (tags && tags.length > 0) {
         filterData = filterData.filter((applicant) => {
           const lowerCaseTags = applicant.Tags.map(tag => tag.toLowerCase());
@@ -176,7 +176,9 @@ export default function Home() {
             currentPosts.map((user, i) => <CardComponent user={user} key={i} />)
           ) : (
             <>
-              <SkeletonLoader/>
+               <div className="flex justify-center items-center">
+                  <h3>No Data Found!</h3>
+               </div>
             </>
           ))
 

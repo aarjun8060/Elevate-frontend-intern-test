@@ -8,21 +8,21 @@ import {
 import { TooltipContent, TooltipProvider } from "@radix-ui/react-tooltip";
 const CardComponent = ({ user }) => {
   return (
-    <div className="w-11/12">
+    <div className="w-11/12 py-4">
       <Card
-        className="flex my-5 h-48 bg-gray-100 px-8 justify-between items-center hover:bg-gray-200 hover:shadow-xl"
+        className="flex my-5 h-auto md:h-48 bg-gray-100 px-8 justify-between items-center hover:bg-gray-200 hover:shadow-xl"
       >
         <div className="h-full  flex items-center w-10 justify-center">
           <Avatar className="border border-black w-12 h-12">
             <AvatarFallback>{user.ApplicantName.slice(0, 1)}</AvatarFallback>
           </Avatar>
         </div>
-        <div className="flex flex-col justify-start items-start w-3/4 py-5">
-          <CardHeader className="text-2xl font-semibold">
+        <div className="flex flex-col justify-start items-start w-3/4 ">
+          <CardHeader className="md:text-2xl font-semibold !my-0 md:my-auto">
             {user.ApplicantName}
           </CardHeader>
-          <CardContent className="text-xl">{user.Intro}</CardContent>
-          <CardContent className="text-lg font-semibold">
+          <CardContent className="text-base md:text-xl">{user.Intro}</CardContent>
+          <CardContent className="!text-xs md:text-lg font-semibold mb-3">
             Number of Jobs applied :{user.NumberOfJobsApplied}
           </CardContent>
         </div>
